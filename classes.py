@@ -2,6 +2,8 @@ from microbit import Image
 
 
 class IconNames:
+    def __init__(self, microbit_image):
+        self.inner_image = microbit_image
     HEART = Image.HEART
     SMALL_HEART = Image.HEART_SMALL
     YES = Image.YES
