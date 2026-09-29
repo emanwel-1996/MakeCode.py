@@ -43,3 +43,15 @@ class IconNames:
     SQUARE = Image.SQUARE
     SMALL_SQUARE = Image.SQUARE_SMALL
     SCISSORS = Image.SCISSORS
+
+class ArrowNames:
+    def __init__(self, microbit_image):
+        self.inner_image = microbit_image
+    NORTH = Image.ARROW_N
+    NORTH_EAST = Image.ARROW_NE
+    EAST = Image.ARROW_E
+    SOUTH_EAST = Image.ARROW_SE
+    SOUTH = Image.ARROW_S
+    SOUTH_WEST = Image.ARROW_SW
+    WEST = Image.ARROW_W
+    NORTH_WESt = Image.ARROW_NW
