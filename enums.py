@@ -3,7 +3,7 @@ from microbit import Image
 
 class IconNames:
     HEART = Image.HEART
-    SMALL_HEARTHEART = Image.HEART_SMALL
+    SMALL_HEART = Image.HEART_SMALL
     YES = Image.YES
     NO = Image.NO
     HAPPY = Image.HAPPY
