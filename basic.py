@@ -1,5 +1,6 @@
 from microbit import display, sleep, Image
-from classes import IconNames
+from typing import Callable
+from classes import IconNames, ArrowNames
 import math
 
 
@@ -24,3 +25,14 @@ def show_string(text: str, interval: float = 150) -> None:
         display.show(text)
     else:
         display.scroll(text, round(interval))
+
+def clear_screen() -> None:
+    display.clear()
+
+def forever(body: Callable[[], None]) -> None:
+    while True:
+        body()
+        sleep(20)
+    
+def show_arrow(direction: ArrowNames, interval: float = 0) -> None:
+    display.show(direction.inner_image)
