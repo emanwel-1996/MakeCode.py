@@ -1,9 +1,9 @@
 from microbit import Image
 
+string = str
+number = float
 
-class IconNames:
-    def __init__(self, microbit_image):
-        self.inner_image = microbit_image
+class IconNames(Image):
     HEART = Image.HEART
     SMALL_HEART = Image.HEART_SMALL
     YES = Image.YES
@@ -44,9 +44,7 @@ class IconNames:
     SMALL_SQUARE = Image.SQUARE_SMALL
     SCISSORS = Image.SCISSORS
 
-class ArrowNames:
-    def __init__(self, microbit_image):
-        self.inner_image = microbit_image
+class ArrowNames(Image):
     NORTH = Image.ARROW_N
     NORTH_EAST = Image.ARROW_NE
     EAST = Image.ARROW_E
